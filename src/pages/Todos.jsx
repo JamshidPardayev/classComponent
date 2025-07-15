@@ -185,7 +185,7 @@ export default class Todos extends Component {
         )}
 
         <div className="overflow-x-auto">
-          <table className="mt-10 border-collapse w-full max-w-5xl text-center shadow-lg rounded-lg overflow-hidden">
+          <table className="mt-10 border-collapse w-full max-w-5xl mx-auto text-center shadow-lg rounded-lg overflow-hidden">
             <thead>
               <tr className="bg-blue-500 text-white">
                 <th className="border px-4 py-3">Full Name</th>
@@ -201,7 +201,7 @@ export default class Todos extends Component {
                   key={item?.id}
                   className={index % 2 === 0 ? "bg-gray-50" : "bg-gray-200"}
                 >
-                  <td className="border border-white px-4 py-2 min-w-[200px]">
+                  <td className="border border-white px-4 py-2 min-w-[220px]">
                     {item?.name} {item?.surname}
                   </td>
                   <td className="border border-white px-4 py-2">
