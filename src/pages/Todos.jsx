@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import  { Component } from "react";
 import backImg from "../assets/img2.jpg";
 export default class Todos extends Component {
   constructor() {
@@ -108,10 +108,10 @@ export default class Todos extends Component {
   };
   render() {
     return (
-      <div className=" min-h-[100vh] bg-gray-50 py-6 mx-auto px-3 ">
+      <div className=" min-h-[100vh] bg-gradient-to-r from-violet-700 to-blue-500 py-6 mx-auto px-3 ">
         <button
           onClick={this.handleToggle}
-          className="w-[200px] h-[40px] rounded bg-gray-600 hover:bg-gray-800 duration-300 cursor-pointer flex justify-center items-center mx-auto text-white mb-5"
+          className="w-[200px] h-[40px] rounded bg-gray-950 hover:bg-gray-900 duration-300 cursor-pointer flex justify-center items-center mx-auto text-white mb-5"
         >
           {this.state.isOpen ? "Close Form" : "Open Form"}
         </button>
@@ -185,7 +185,7 @@ export default class Todos extends Component {
         )}
 
         <div className="overflow-x-auto">
-          <table className="mt-10 border-collapse w-full max-w-5xl mx-auto text-center shadow-lg rounded-lg overflow-hidden">
+          <table className="mt-10 border-collapse w-full max-w-5xl mx-auto text-center shadow-lg overflow-hidden">
             <thead>
               <tr className="bg-blue-500 text-white">
                 <th className="border px-4 py-3">Full Name</th>
@@ -199,7 +199,7 @@ export default class Todos extends Component {
               {this.state.data?.map((item, index) => (
                 <tr
                   key={item?.id}
-                  className={index % 2 === 0 ? "bg-gray-50" : "bg-gray-200"}
+                  className={index % 2 === 0 ? "bg-gray-100" : "bg-gray-300"}
                 >
                   <td className="border border-white px-4 py-2 min-w-[220px]">
                     {item?.name} {item?.surname}
