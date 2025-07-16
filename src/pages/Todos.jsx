@@ -1,5 +1,5 @@
 import  { Component } from "react";
-import backImg from "../assets/img2.jpg";
+import backImg from "../assets/img1.jpg";
 export default class Todos extends Component {
   constructor() {
     super();
